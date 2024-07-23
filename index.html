@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git API Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading-seaction">
+        <div><h2 id="heading">DevDetective</h2></div>
+        <div class="light-seaction">
+          <p id="light-t">LIGHT</p>
+          <img src="./assets/images/sun-icon.svg" id="mode" />
+        </div>
+      </div>
+      <form action="submit">
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="search"
+            name="user-input"
+            id="input"
+            placeholder="Enter a GitHub username..."
+            required
+          />
+        </div>
+        <button>search</button>
+      </form>
+      <div class="content-seaction">
+        <img id="error" src="./assets/not-found.png" width="200" height="200" />
+        <div class="img-seaction">
+          <img src="./assets/nitin tundwal.jpg" id="profile-img" />
+        </div>
+
+        <div class="content">
+          <div class="about-seaction">
+            <div class="discription">
+              <h2 id="username">Nitin Tundwal</h2>
+              <a id="user-link" href="#">@nitintundwal</a>
+              <p id="discription">This profile ha no bio</p>
+            </div>
+            <div class="date">Joined 21 jun 2022</div>
+          </div>
+          <div class="follower-seaction">
+            <div class="repo">
+              <p>Repo</p>
+              <h2 id="repo" class="num">3</h2>
+            </div>
+            <div class="followers">
+              <p>Followers</p>
+              <h2 id="followers" class="num">0</h2>
+            </div>
+            <div class="following">
+              <p>following</p>
+              <h2 id="following" class="num">0</h2>
+            </div>
+          </div>
+          <div class="link-seaction">
+            <div class="left-link">
+              <div class="location">
+                <img src="./assets/images/location-icon.svg" alt="" />
+                <p id="location">Not Available</p>
+              </div>
+              <div class="twiter-link">
+                <img src="./assets/images/twitter-icon.svg" alt="" />
+                <!-- <i class="fa-brands fa-twitter"></i> -->
+                <a id="twitter" href="#">thenitintundwal</a>
+              </div>
+            </div>
+            <div class="right-link">
+              <div class="bio-link">
+                <img src="./assets/images/website-icon.svg" alt="" />
+                <a id="bio" href="#">Not Available</a>
+              </div>
+              <div class="target">
+                <img src="./assets/images/company-icon.svg" alt="" />
+                <p id="company">Not Available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

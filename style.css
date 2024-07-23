@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;1,300&family=Poppins&family=Roboto&family=Space+Mono:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+:root {
+  --lm-text: white;
+  --lm-text-alt: white;
+  --lm-bg-content: #1e2a47;
+  --lm-bg: #141d2f;
+  --lm-shadow: 0px 16px 30px -10px rgba(70, 88, 109, 0.15);
+  /* --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2); */
+  --lm-icon-bg: brightness(100%);
+  /* Btn */
+  --btn: #0079ff;
+  --btn-hover: #60abff;
+}
+
+.light-mode {
+  --lm-text: #4b6a9b;
+  --lm-text-alt: #2b3442;
+  --lm-bg-content: #fefefe;
+  --lm-bg: #f6f8ff;
+  --lm-shadow: 0px 16px 30px -10px rgba(70, 88, 109, 0.25);
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--lm-bg);
+  gap: 3rem;
+}
+
+.heading-seaction {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  color: var(--lm-text);
+  margin-top: 1rem;
+}
+
+.light-seaction {
+  height: 25px;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+#mode {
+  cursor: pointer;
+}
+
+#dark {
+  position: absolute;
+  right: 0;
+  scale: 0;
+}
+
+form {
+  width: 48%;
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--lm-bg-content);
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: var(--lm-shadow);
+  color: var(--lm-text);
+}
+
+#input {
+  border: none;
+  height: 3rem;
+  width: 25rem;
+  outline: none;
+  background: none;
+  color: var(--lm-text);
+  margin-left: 0.8rem;
+  font-size: 20px;
+}
+
+#input::placeholder {
+  color: var(--lm-text);
+  letter-spacing: -0.5px;
+  font-size: 20px;
+  margin-left: -10px;
+}
+
+.fa-magnifying-glass {
+  margin-left: 1rem;
+  color: var(--btn);
+}
+
+button {
+  background-color: var(--btn);
+  padding: 14px 28px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 10px;
+  margin-right: 0.5rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content-seaction {
+  width: 48%;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  background-color: var(--lm-bg-content);
+  border-radius: 1rem;
+  margin-top: -1rem;
+  box-shadow: var(--lm-shadow);
+  scale: 1;
+  position: relative;
+}
+
+#profile-img {
+  width: 117px;
+  border-radius: 90px;
+  margin-left: 40px;
+  margin-top: 2rem;
+  scale: 1;
+}
+
+#error {
+  position: absolute;
+  z-index: 2;
+  right: 17rem;
+  top: 7rem;
+  scale: 0;
+}
+
+.active {
+  scale: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2rem;
+  color: var(--lm-text);
+  flex: 1;
+  left: 0;
+  scale: 1;
+}
+
+.about-seaction {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+}
+
+#username {
+  color: var(--lm-text-alt);
+}
+
+.discription {
+  width: 60%;
+}
+
+#discription {
+  margin-top: 0.8rem;
+  opacity: 0.75;
+}
+
+.date {
+  position: absolute;
+  margin-right: 3rem;
+  right: 2.5rem;
+  flex: 1;
+  right: 0;
+}
+
+.follower-seaction {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  background-color: var(--lm-bg);
+  padding: 15px 30px;
+  border-radius: 10px;
+  width: 90%;
+  right: -3rem;
+}
+
+.link-seaction {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  justify-content: space-between;
+  margin-right: 3rem;
+  justify-content: space-evenly;
+}
+
+.num {
+  color: var(--lm-text-alt);
+}
+
+.left-link {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.location {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.right-link {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.target {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.twiter-link a {
+  text-decoration: underline;
+  color: var(--lm-text);
+}
+
+.bio-link a {
+  text-decoration: underline;
+  color: var(--lm-text);
+}
+
+.error {
+  background-image: url("./assets/not-found.png");
+}
+
+.deactive {
+  scale: 0;
+}
